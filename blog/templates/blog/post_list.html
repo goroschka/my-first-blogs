@@ -1,19 +1,18 @@
 <html>
         <head>
-            <title>Django Olya's blog</title>
+            <title>Django Olyas' blog</title>
         </head>
         <body>
             <div>
-                <h1><a href="">My Django Blog</a></h1>
+                <h1><a href="/">Django Olyas' Blog</a></h1>
             </div>
 
             {% for post in posts %}
-			    <div>
-                    <p>{{ post.published_date }}</p>
+                <div>
+                    <p>published: {{ post.published_date }}</p>
                     <h1><a href="">{{ post.title }}</a></h1>
                     <p>{{ post.text|linebreaks }}</p>
                 </div>
-
             {% endfor %}
         </body>
-</html>
+    </html>
